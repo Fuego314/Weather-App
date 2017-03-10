@@ -1,0 +1,38 @@
+.overlay
+	position: absolute
+	display: flex
+	flex-direction: column
+	justify-content: center
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 1em
+	z-index: 100
+	transition: all .6s
+	.overlay-head
+		margin-top: 0
+		animation: fadeDown .6s 1.8s ease-out forwards
+	.overlay-p
+		margin-bottom: 3em
+		transform: scale(0)
+		animation: fadeIn .6s 2.5s ease-out forwards
+	.overlay-btn
+		position: relative
+		display: inline-block
+		padding: .5em 1em .5em 1.15em
+		border: 2px solid #111
+		border-radius: 25px
+		cursor: pointer
+		animation: fadeUp .6s 3.2s ease-out forwards
+		&:hover
+			bottom: 1px
+			box-shadow: 0 4px 10px 0 rgba(0,0,0,1)
+		@media(min-width: 640px)
+			padding: .5em 1.1em .6em 1.25em
+		@media(min-width: 640px)
+			padding: .5em 1.1em .4em 1.25em
+	.overlay-head,
+	.overlay-p,
+	.overlay-btn
+		opacity: 0

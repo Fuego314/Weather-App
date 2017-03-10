@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+	<title>Weather App</title>
+	<meta name="description" content="Get your local weather and 5 day forecast">
+	<meta name="Author" content="Luke Tucker">
+	<!-- build:css css/styles.min.css -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:700%7CRaleway:400,600,700" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- endbuild -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="overlay">
+			<div>
+				<h1 class="overlay-head">local weather app</h1>
+				<p class="overlay-p">live weather with 5 day forecast</p>
+				<div class="overlay-btn">enter</div>
+			</div>
+		</div><!-- overlay -->
+
+		<section class="weather">
+
+			<div class="today">
+
+				<h2 id="dynamic-welcome" class="welcome"></h2>
+				<p id="temp"></p>
+
+				<div class="switch-holder">
+			    <div class="temp-switch">
+			      <input type="checkbox" name="temp-switch" class="temp-switch-checkbox" id="tempSwitch" value="true" checked>
+			      <label class="temp-switch-label" for="tempSwitch">
+			        <span class="temp-switch-inner"></span>
+			        <span class="temp-switch-switch"></span>
+			      </label>
+			    </div><!-- temp-switch -->
+			  </div><!-- switch-holder -->
+
+				<p class="detail"></p>
+
+				<p class="location"></p>
+
+			</div><!-- today -->
+
+			<div class="forecast">
+
+				<div class="day-wrapper">
+					<p class="day"></p>
+					<div class="forecast-icon"></div>
+					<p class="forecast-deg"></p>
+				</div><!-- day wrapper -->
+
+				<div class="day-wrapper">
+					<p class="day"></p>
+					<div class="forecast-icon"></div>
+					<p class="forecast-deg"></p>
+				</div><!-- day wrapper -->
+
+				<div class="day-wrapper">
+					<p class="day"></p>
+					<div class="forecast-icon"></div>
+					<p class="forecast-deg"></p>
+				</div><!-- day wrapper -->
+
+				<div class="day-wrapper">
+					<p class="day"></p>
+					<div class="forecast-icon"></div>
+					<p class="forecast-deg"></p>
+				</div><!-- day wrapper -->
+
+				<div class="day-wrapper">
+					<p class="day"></p>
+					<div class="forecast-icon"></div>
+					<p class="forecast-deg"></p>
+				</div><!-- day wrapper -->
+
+			</div><!-- forecast -->
+
+		</section><!-- weather -->
+
+	</div><!-- container -->
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!--build:js js/main.min.js -->
+	<script src="js/babel/app.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

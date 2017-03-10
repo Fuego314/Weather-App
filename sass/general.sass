@@ -1,0 +1,35 @@
+::root
+  font-size: 16px
+
+*, *::after, *::before
+  box-sizing: border-box
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.overlay-head, .overlay-p,
+.overlay-btn, .welcome,
+#temp, .details, .location,
+.day, .forecast-icon,
+.forecast-deg
+  transition: all .3s
+
+@keyframes fadeIn
+  100%
+    opacity: 1
+    transform: scale(1)
+
+@keyframes fadeDown
+  0%
+    transform: translateY(-200px)
+  100%
+    opacity: 1
+    transform: translateY(0)
+
+@keyframes fadeUp
+  0%
+    transform: translateY(200px)
+  100%
+    opacity: 1
+    transform: translateY(0)

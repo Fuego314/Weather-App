@@ -1,0 +1,100 @@
+.forecast
+	display: flex
+	justify-content: space-around
+	margin-bottom: 1em
+	.day
+		margin-bottom: .25em
+	.forecast-icon
+		width: 3em
+		height: 3em
+		background-image: url(../images/icon-sprite.svg)
+		background-size: cover
+		@media(min-width: 360px)
+			width: 3.5em
+			height: 3.5em
+		@media(min-width: 640px)
+			width: 4.5em
+			height: 4.5em
+	.forecast-deg
+		margin: .3em 0 .5em
+
+.clear-sun
+	background-position-x: 0
+.cloudy
+	background-position-x: 632px
+	@media(min-width: 360px)
+		background-position-x: 737px
+	@media(min-width: 640px)
+		background-position-x: 948px
+.flurries-sleet
+	background-position-x: 584px
+	@media(min-width: 360px)
+		background-position-x: 680px
+	@media(min-width: 640px)
+		background-position-x: 875px
+.fog-hazy
+	background-position-x: 535px
+	@media(min-width: 360px)
+		background-position-x: 624px
+	@media(min-width: 640px)
+		background-position-x: 802px
+.m-cloud-p-sun
+	background-position-x: 486px
+	@media(min-width: 360px)
+		background-position-x: 567px
+	@media(min-width: 640px)
+		background-position-x: 729px
+.m-sun-p-cloud
+	background-position-x: 438px
+	@media(min-width: 360px)
+		background-position-x: 510px
+	@media(min-width: 640px)
+		background-position-x: 656px
+.snow
+	background-position-x: 389px
+	@media(min-width: 360px)
+		background-position-x: 453px
+	@media(min-width: 640px)
+		background-position-x: 583px
+.rain
+	background-position-x: 340px
+	@media(min-width: 360px)
+		background-position-x: 397px
+	@media(min-width: 640px)
+		background-position-x: 510px
+.tstorms
+	background-position-x: 291px
+	@media(min-width: 360px)
+		background-position-x: 340px
+	@media(min-width: 640px)
+		background-position-x: 437px
+.flurries-sleet-chance
+	background-position-x: 243px
+	@media(min-width: 360px)
+		background-position-x: 283px
+	@media(min-width: 640px)
+		background-position-x: 364px
+.rain-chance
+	background-position-x: 194px
+	@media(min-width: 360px)
+		background-position-x: 226px
+	@media(min-width: 640px)
+		background-position-x: 291px
+.snow-chance
+	background-position-x: 145px
+	@media(min-width: 360px)
+		background-position-x: 170px
+	@media(min-width: 640px)
+		background-position-x: 218px
+.tstorms-chance
+	background-position-x: 97px
+	@media(min-width: 360px)
+		background-position-x: 113px
+	@media(min-width: 640px)
+		background-position-x: 146px
+.unknown
+	background-position-x: 48px
+	@media(min-width: 360px)
+		background-position-x: 56px
+	@media(min-width: 640px)
+		background-position-x: 73px
